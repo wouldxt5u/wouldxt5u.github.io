@@ -19,17 +19,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://wouldxt5u.github.io/index.html">
+    <meta name="description" content="联合查询注入：id&#x3D;1‘解释WHERE id&#x3D;’1’’ LIMIT 0,1  &gt; WHERE id&#x3D;’1’ + ‘’ LIMIT 0,1 在SQL中，如果要在字符串值中包含一个单引号字符，需要用两个连续的单引号来表示：    你想表示 SQL写法 实际含义    字符串 abc &#39;abc&#39; 字符串abc   字符串 a&#39;b&#39;c &amp;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="page.title">
+<meta property="og:url" content="https://wouldxt5u.github.io/img/sql.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="联合查询注入：id&#x3D;1‘解释WHERE id&#x3D;’1’’ LIMIT 0,1  &gt; WHERE id&#x3D;’1’ + ‘’ LIMIT 0,1 在SQL中，如果要在字符串值中包含一个单引号字符，需要用两个连续的单引号来表示：    你想表示 SQL写法 实际含义    字符串 abc &#39;abc&#39; 字符串abc   字符串 a&#39;b&#39;c &amp;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-01-01T06:05:13.515Z">
+<meta property="article:modified_time" content="2025-11-23T08:13:04.327Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hexo</title>
+  <title>page.title - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -98,7 +102,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 100vh;">
+<div class="header-inner" style="height: 60vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -198,23 +202,19 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/2.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/1.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="相逢既是缘"></span>
+            <span id="subtitle" data-typed-text="page.title"></span>
           
         </div>
 
         
       </div>
 
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
       
     </div>
   </div>
@@ -228,81 +228,45 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          style="margin-top: 0">
+          >
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/01/02/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-ctfshow/" target="_self">
-          文件上传-ctfshow
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/01/02/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-ctfshow/" target="_self">
-        <div>
-          web153提示上传一个图片，接着就抓包改后缀最开始直接改成php3后缀发现也可以上传但是蚁剑连接失败，又想到了用ini文件去包含上传的png马，所以上传png文件，在bp里抓包改名字上传ini文件用蚁剑连接upload&#x2F;index.php得到flag 总结： .user.ini的妙用原理 .user.ini中两个中的配置就是auto_prepend_file和auto_append_f
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-01-02 00:13" pubdate>
-              2026-01-02
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/01/01/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/01/01/hello-world/" target="_self">
-        <div>
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-01-01 19:51" pubdate>
-              2026-01-01
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
+<article class="page-content">
+  <h1 id="联合查询注入："><a href="#联合查询注入：" class="headerlink" title="联合查询注入："></a>联合查询注入：</h1><h3 id="id-1‘解释"><a href="#id-1‘解释" class="headerlink" title="id&#x3D;1‘解释"></a>id&#x3D;1‘解释</h3><p>WHERE id&#x3D;’1’’ LIMIT 0,1  &gt; WHERE id&#x3D;’1’ + ‘’ LIMIT 0,1</p>
+<p>在SQL中，如果要在字符串值中包含一个单引号字符，需要用<strong>两个连续的单引号</strong>来表示：</p>
+<table>
+<thead>
+<tr>
+<th>你想表示</th>
+<th>SQL写法</th>
+<th>实际含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>字符串 <code>abc</code></td>
+<td><code>&#39;abc&#39;</code></td>
+<td>字符串abc</td>
+</tr>
+<tr>
+<td>字符串 <code>a&#39;b&#39;c</code></td>
+<td><code>&#39;a&#39;&#39;b&#39;&#39;c&#39;</code></td>
+<td>a’b’c</td>
+</tr>
+<tr>
+<td>字符串 <code>O&#39;Reilly</code></td>
+<td><code>&#39;O&#39;&#39;Reilly&#39;</code></td>
+<td>O’Reilly</td>
+</tr>
+</tbody></table>
 
 
+  
+
+</article>
 
 
 
