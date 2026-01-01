@@ -1,0 +1,61 @@
+@media not print {
+  [data-user-color-scheme="dark"] {
+    --body-bg-color: #BDC4D8;
+    --board-bg-color: #000000ad;
+    --text-color: #E8D8D8;
+    --sec-text-color: #a7a9ad;
+    --post-text-color: #c4c6c9;
+    --post-heading-color: #05c4b9;
+    --post-link-color: #1589e9;
+    --link-hover-color: #30a9de;
+    --link-hover-bg-color: #364151;
+    --line-color: #435266;
+    --navbar-bg-color: #1f3144;
+    --navbar-text-color: #d0d0d0;
+    --subtitle-color: #d0d0d0;
+    --scrollbar-color: #687582;
+    --scrollbar-hover-color: #9da8b3;
+    --button-bg-color: transparent;
+    --button-hover-bg-color: #46647e;
+    --highlight-bg-color: #303030;
+    --inlinecode-bg-color: rgba(99,110,123,0.4);
+    --fold-title-color: #E8D8D8;
+    --fold-border-color: #435266;
+  }
+  [data-user-color-scheme="dark"] img {
+    -webkit-filter: brightness(0.9);
+    filter: brightness(0.9);
+    transition: filter 0.2s ease-in-out;
+  }
+  [data-user-color-scheme="dark"] .license-box {
+    background-color: rgba(62,75,94,0.35);
+    transition: background-color 0.2s ease-in-out;
+  }
+  [data-user-color-scheme="dark"] .gt-comment-admin .gt-comment-content {
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+  }
+}
+
+#toc {
+    padding: 10px;
+    top: 4rem;
+    background-color: var(--board-bg-color);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+#board {
+  position: relative;
+  margin-top: -2rem;
+  padding: 3rem 0;
+  background-color: var(--board-bg-color);
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.5rem;
+  z-index: 3;
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
