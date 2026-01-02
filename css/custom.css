@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'MoonStarsKai'; 
+    src: url('/font/MoonStarsKai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    font-family: 'MoonStarsKai';
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+}
+
 @media not print {
   [data-user-color-scheme="dark"] {
     --body-bg-color: #BDC4D8;
