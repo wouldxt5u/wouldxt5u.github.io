@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>23年盘古石逆向部分</title>
+    <link href="/2026/01/03/23%E5%B9%B4%E7%9B%98%E5%8F%A4%E7%9F%B3%E9%80%86%E5%90%91%E9%83%A8%E5%88%86/"/>
+    <url>/2026/01/03/23%E5%B9%B4%E7%9B%98%E5%8F%A4%E7%9F%B3%E9%80%86%E5%90%91%E9%83%A8%E5%88%86/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-分析技术人员的模拟手机，给出安全防护的验证码是？"><a href="#1-分析技术人员的模拟手机，给出安全防护的验证码是？" class="headerlink" title="1.分析技术人员的模拟手机，给出安全防护的验证码是？"></a>1.分析技术人员的模拟手机，给出安全防护的验证码是？</h2><p><img src="/a.png" alt="描述"><br>在技术人员的电脑里发现了这个雷电的备份ldbk的文件，猜测是他的模拟手机。导出来在本地进行还原操作。<br>用雷电打开即可<br><img src="/1.png" alt="描述"></p><p>得到<img src="/b.png" alt="描述"></p><p>在模拟器中直接导出安全防护，用jadx分析，主函数是com.icbcbfife.hdadgefff.SecretWelcomeActivity，包名是com.l…..<br><img src="/f.png" alt="描述"><br>可以看见startpass是开机密码，这是一个判断代码<br>用模拟器导出apk包进行分析</p><p><img src="/g.png" alt="描述"><br>导出以后看下面的内容发现了一个之前看见过的startpass内容<br><img src="/e.png" alt="描述"><br>可以确定密码是110110110</p><h2 id="2-分析技术人员的模拟手机，给出安全防护的推送服务的调证值是？"><a href="#2-分析技术人员的模拟手机，给出安全防护的推送服务的调证值是？" class="headerlink" title="2.分析技术人员的模拟手机，给出安全防护的推送服务的调证值是？"></a>2.分析技术人员的模拟手机，给出安全防护的推送服务的调证值是？</h2><p><img src="/z.png" alt="描述"><br>根据雷电分析可以看见推送服务是友盟，刚才导出了apk包，继续在包里找相关线索<br><img src="/x.png" alt="描述"><br>得到了appkey调证值</p><h2 id="3-分析技术人员的模拟手机，给出老板的联系方式是？"><a href="#3-分析技术人员的模拟手机，给出老板的联系方式是？" class="headerlink" title="3.分析技术人员的模拟手机，给出老板的联系方式是？"></a>3.分析技术人员的模拟手机，给出老板的联系方式是？</h2><p>apk里没有相关信息（聊天软件），在做手机部分的时候提示了一个聊天的软件 后续经分析将软件拖进雷电进行分析即可得到3，4，5问的答案。<br><img src="/ca.png" alt="描述"><br>就是cn.wildfirechat.chat可以看见明显是一个聊天软件导出进行分析。<br><img src="/v.png" alt="描述"><br>导出了存在的包，但是并没有发现他的apk文件，所以去源文件里找app文件夹下去找<br><img src="/r.png" alt="描述"><br>将此apk导入雷电中再进行分析<br>思路：<br>adb替换雷电里的数据，之后把找到的apk包导进去，得到结论<br>在进行逆向分析时，暂未找到该应用操作数据库的点，无法打开其加密数据库，因此尝试应用仿真。当应用加密文件时，如果使用的密钥不是根据设备动态生成的，就可以使用这种方式来提取信息。 先将data&#x2F;data&#x2F;cn.wildfirechat.chat这个应用数据目录导入到模拟器的&#x2F;data&#x2F;data目录下，再安装应用<br><img src="/t.png" alt="描述"><br>导入数据以后就可以看见信息了<br><img src="/h.png" alt="描述"><br><img src="/j.png" alt="描述"></p><h2 id="4-分析技术人员的模拟手机，给出办公场所是？"><a href="#4-分析技术人员的模拟手机，给出办公场所是？" class="headerlink" title="4.分析技术人员的模拟手机，给出办公场所是？"></a>4.分析技术人员的模拟手机，给出办公场所是？</h2><p><img src="/c.png" alt="描述"></p><h2 id="5-分析技术人员的模拟手机，给出技术人员聊天工具的用户ID是？"><a href="#5-分析技术人员的模拟手机，给出技术人员聊天工具的用户ID是？" class="headerlink" title="5.分析技术人员的模拟手机，给出技术人员聊天工具的用户ID是？"></a>5.分析技术人员的模拟手机，给出技术人员聊天工具的用户ID是？</h2><p><img src="/n.png" alt="描述"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>电子取证</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>逆向apk</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>文件上传-ctfshow</title>
     <link href="/2026/01/02/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-ctfshow/"/>
     <url>/2026/01/02/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-ctfshow/</url>
